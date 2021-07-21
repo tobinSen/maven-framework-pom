@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>com.example.framework</artifactId>
+        <groupId>com.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>com.example.framework.parent</artifactId>
+    <version>${framework.parent.version}</version>
+
+    <properties>
+        <!-- self project version -->
+        <framework.parent.version>1.0-SNAPSHOT</framework.parent.version>
+        <thirdparty.version>1.0-SNAPSHOT</thirdparty.version>
+
+        <!-- third party version -->
+        <commons-lang3>3.10</commons-lang3>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- third party dependency -->
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>com.example.framework.thirdparty</artifactId>
+                <version>${thirdparty.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
