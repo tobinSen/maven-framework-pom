@@ -5,17 +5,15 @@
     <parent>
         <artifactId>com.example.framework</artifactId>
         <groupId>com.example</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>com.example.framework.parent</artifactId>
     <packaging>pom</packaging>
-    <version>${framework.parent.version}</version>
 
     <properties>
         <!-- self project version -->
-        <framework.parent.version>1.0-SNAPSHOT</framework.parent.version>
         <exam.version>1.0-SNAPSHOT</exam.version>
 
         <!-- third party version -->

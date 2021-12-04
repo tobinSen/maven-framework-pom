@@ -7,9 +7,11 @@
     <groupId>com.example</groupId>
     <artifactId>com.example.framework</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <properties>
+        <!--父模板的版本，子类继承父模板可以直接使用此版本-->
+        <revision>1.0.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- plugin version-->
         <spring-boot-maven-plugin.version>2.0.0.RELEASE</spring-boot-maven-plugin.version>
