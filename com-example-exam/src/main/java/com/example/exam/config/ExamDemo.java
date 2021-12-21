@@ -10,5 +10,7 @@ public class ExamDemo {
         System.out.println("result: " + result);
 
         System.out.println("random: " + RandomStringUtils.randomNumeric(4));
+
+        System.out.println("random: " + RandomStringUtils.randomNumeric(5));
     }
 }
